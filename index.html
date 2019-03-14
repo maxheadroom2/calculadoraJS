@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="inicioBotones();">
+<body onload="calculadora();">
 
   <div class="container">
     <section id="page-login">
@@ -29,16 +29,9 @@
                     <div class="card-content white-text">
                       <span class="card-title">Calculadora</span>
                       <div class="row">
-                        <table class="striped">
-                          <thead>
-                          <tbody>
-                            <tr>
-                              <td></td>
-                              <td>Resultado</td>
-                              <td></td>
-                            </tr>
-                          </tbody>
-                        </table>
+                        <div class="input-field col s12">
+                          <input id="disabled" type="number" style="background-color: black">
+                        </div>
                         <div class="input-field col s12">
                           <input id="resultado" type="number" style="background-color: white">
                         </div>

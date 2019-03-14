@@ -1,87 +1,42 @@
-console.log("Bienvenido a mi calculadora");
+function calculadora() {
 
+  var suma;
+  var resta;
+  var multipliacion;
+  var division;
 
+  alert("Para hacer cualquier operacion, escribe que operacion quieres, suma = 1, resta = 2, multiplicacion = 3 o division = 4");
 
-function inicioBotones(){
-  //variables de los botones
-  var resultado = document.getElementById('resultado');
-  var suma = document.getElementById('suma');
-  var resta = document.getElementById('resta');
-  var multiplicacion = document.getElementById('multiplicacion');
-  var division = document.getElementById('division');
-  var uno = document.getElementById('uno');
-  var dos = document.getElementById('dos');
-  var tres = document.getElementById('tres');
-  var cuatro = document.getElementById('cuatro');
-  var cinco = document.getElementById('cinco');
-  var seis = document.getElementById('seis');
-  var siete = document.getElementById('siete');
-  var ocho = document.getElementById('ocho');
-  var nueve = document.getElementById('nueve');
-  var cero = document.getElementById('cero');
-};
+  var operacion = prompt("Que operacion quieres");
+  console.log(operacion);
 
-//Eventos de click
-  uno.onclick = function(e){
-      resultado.textContent = resultado.textContent  + "1";
-  }
-  dos.onclick = function(e){
-      resultado.textContent = resultado.textContent  + "2";
-  }
-  tres.onclick = function(e){
-      resultado.textContent = resultado.textContent  + "3";
-  }
-  cuatro.onclick = function(e){
-      resultado.textContent = resultado.textContent  + "4";
-  }
-  cinco.onclick = function(e){
-      resultado.textContent = resultado.textContent  + "5";
-  }
-  seis.onclick = function(e){
-      resultado.textContent = resultado.textContent  + "6";
-  }
-  siete.onclick = function(e){
-      resultado.textContent = resultado.textContent  + "7";
-  }
-  ocho.onclick = function(e){
-      resultado.textContent = resultado.textContent  + "8";
-  }
-  nueve.onclick = function(e){
-      resultado.textContent = resultado.textContent  + "9";
-  }
-  cero.onclick = function(e){
-      resultado.textContent = resultado.textContent  + "0";
-  }
-  reset.onclick = function(e){
-      resetear();
-  }
-  suma.onclick = function(e){
-      operandoa = resultado.textContent;
-      operacion = "+";
-      limpiar();
-  }
-  resta.onclick = function(e){
-      operandoa = resultado.textContent;
-      operacion = "-";
-      limpiar();
-  }
-  multiplicacion.onclick = function(e){
-      operandoa = resultado.textContent;
-      operacion = "*";
-      limpiar();
-  }
-  division.onclick = function(e){
-      operandoa = resultado.textContent;
-      operacion = "/";
-      limpiar();
-  }
-  igual.onclick = function(e){
-      operandob = resultado.textContent;
-      resolver();
+  switch (operacion) {
+    case "1":
+      let sum1 = prompt('suma, ingresa el primer valor');
+      let sum2 = prompt('suma, ingresa el segundo valor');
+      let resultado = parseInt(sum1) + parseInt(sum2);
+      alert('El resultado es ' + resultado);
+      break;
+    case "2":
+      let res1 = prompt('resta, ingresa el primer valor');
+      let res2 = prompt('resta, ingresa el segundo valor');
+      let resultado2 = parseInt(res1) - parseInt(res2);
+      alert('El resultado es ' + resultado2);
+      break;
+    case "3":
+      let m1 = prompt('multipliacion, ingresa el primer valor');
+      let m2 = prompt('multipliacion, ingresa el segundo valor');
+      let resultado3 = parseInt(m1) * parseInt(m2);
+      alert('El resultado es ' + resultado3);
+      break;
+    case "4":
+      let d1 = prompt('division, ingresa el primer valor');
+      let d2 = prompt('division, ingresa el segundo valor');
+      let resultado4 = parseInt(d1) / parseInt(d2);
+      alert('El resultado es ' + resultado4);
+      break;
+    default:
+
   }
 
-
-//
-// function operaciones(selector) {
-//
-// setInterval(size, 1000);
+}
