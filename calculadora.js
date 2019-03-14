@@ -1,7 +1,9 @@
 console.log("Bienvenido a mi calculadora");
 
+
+
 function inicioBotones(){
-  //variables
+  //variables de los botones
   var resultado = document.getElementById('resultado');
   var suma = document.getElementById('suma');
   var resta = document.getElementById('resta');
@@ -17,15 +19,69 @@ function inicioBotones(){
   var ocho = document.getElementById('ocho');
   var nueve = document.getElementById('nueve');
   var cero = document.getElementById('cero');
-}
-
-var selector;
-var resultado = 0;
-var barra = 0;
-
-function operaciones(selector) {
-
-setInterval(size, 1000);
 };
 
-function(input1, input2);
+//Eventos de click
+  uno.onclick = function(e){
+      resultado.textContent = resultado.textContent  + "1";
+  }
+  dos.onclick = function(e){
+      resultado.textContent = resultado.textContent  + "2";
+  }
+  tres.onclick = function(e){
+      resultado.textContent = resultado.textContent  + "3";
+  }
+  cuatro.onclick = function(e){
+      resultado.textContent = resultado.textContent  + "4";
+  }
+  cinco.onclick = function(e){
+      resultado.textContent = resultado.textContent  + "5";
+  }
+  seis.onclick = function(e){
+      resultado.textContent = resultado.textContent  + "6";
+  }
+  siete.onclick = function(e){
+      resultado.textContent = resultado.textContent  + "7";
+  }
+  ocho.onclick = function(e){
+      resultado.textContent = resultado.textContent  + "8";
+  }
+  nueve.onclick = function(e){
+      resultado.textContent = resultado.textContent  + "9";
+  }
+  cero.onclick = function(e){
+      resultado.textContent = resultado.textContent  + "0";
+  }
+  reset.onclick = function(e){
+      resetear();
+  }
+  suma.onclick = function(e){
+      operandoa = resultado.textContent;
+      operacion = "+";
+      limpiar();
+  }
+  resta.onclick = function(e){
+      operandoa = resultado.textContent;
+      operacion = "-";
+      limpiar();
+  }
+  multiplicacion.onclick = function(e){
+      operandoa = resultado.textContent;
+      operacion = "*";
+      limpiar();
+  }
+  division.onclick = function(e){
+      operandoa = resultado.textContent;
+      operacion = "/";
+      limpiar();
+  }
+  igual.onclick = function(e){
+      operandob = resultado.textContent;
+      resolver();
+  }
+
+
+//
+// function operaciones(selector) {
+//
+// setInterval(size, 1000);

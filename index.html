@@ -12,57 +12,11 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<style media="screen">
-  /*! revisar mas datos aqui  https://developer.mozilla.org/es/docs/Web/CSS/grid-template-areas */
-a {
-  margin-bottom: 5px;
-}
-  #page-login {
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    margin: 0px;
-    padding: 0;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 80% 10%;
-    grid-template-areas:
-    " head"
-    " main"
-    " foot";
-  }
+<body onload="inicioBotones();">
 
-  #page-login>header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    grid-area: head;
-  }
-
-  #page-login>main {
-    display: flex;
-    max-height: 800px;
-    background-color: #ffffff;
-    align-items: center;
-    justify-content: space-around;
-    grid-area: main;
-  }
-
-  #page-login>footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    grid-area: foot;
-  }
-
-</style>
-
-<body onload="javascript:size()">
-  <script src="calculadora.js" charset="utf-8"></script>
   <div class="container">
     <section id="page-login">
       <main>
@@ -80,12 +34,11 @@ a {
                           <tbody>
                             <tr>
                               <td></td>
-                              <td>Eclair</td>
+                              <td>Resultado</td>
                               <td></td>
                             </tr>
                           </tbody>
                         </table>
-
                         <div class="input-field col s12">
                           <input id="resultado" type="number" style="background-color: white">
                         </div>
@@ -109,18 +62,17 @@ a {
                             <i class="material-icons right">send</i>
                           </button>
                         </div>
-
                       </div>
                     </div>
                   </div>
                 </div>
-
             </form>
           </div>
           </form>
       </main>
     </section>
   </div>
+  <script src="calculadora.js" charset="utf-8"></script>
 </body>
 
 </html>
