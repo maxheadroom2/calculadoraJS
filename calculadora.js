@@ -36,7 +36,5 @@ function calculadora() {
       alert('El resultado es ' + resultado4);
       break;
     default:
-
   }
-
 }
