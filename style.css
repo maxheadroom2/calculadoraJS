@@ -1,5 +1,24 @@
-a {
+button {
   margin-bottom: 5px;
+}
+
+#result {
+
+    font-family: sans-serif;
+    width:250px;
+    margin-bottom: 30px !important;
+    height:40px;
+    margin:1px auto;
+    text-align: right;
+    border:0;
+    background:#3b3535;
+    color:#fff;
+    font-size:27px;
+    outline: none;
+    overflow: hidden;
+    letter-spacing: 4px;
+    position: relative;
+    top:10px;
 }
 
 #page-login {
